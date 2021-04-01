@@ -64,7 +64,7 @@ void wanita () {
     cout << "Your Body Fat is : " << body_fat << endl;
 
     //Nilai Body Fat
-    cout << "Your Body Fat Percentage (BEP) is : " << body_fat_percentage << endl;
+    cout << "Your Body Fat Percentage (BEP) is : " << body_fat_percentage << "\n%" << endl;
     
     // Kategori
     if ( body_fat_percentage <= 32 ) {
@@ -109,10 +109,10 @@ void pria () {
     cout << "Your Body Fat is : " << body_fat << endl;
 
     //Nilai Body Fat
-    cout << "Your Body Fat Percentage (BEP) is : " << body_fat_percentage << endl;
+    cout << "Your Body Fat Percentage (BEP) is : " << body_fat_percentage << "\n%" << endl;
     
     // Kategori
-    if ( body_fat_percentage <= 32 ) {
+    if ( body_fat_percentage <= 26 ) {
         cout <<  "Your Category is Normal" << endl;
     }
     else {
