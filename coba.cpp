@@ -7,5 +7,5 @@ int main () {
 
     x = (double) 2.57/2;
 
-    cout << x << endl;
+    cout << x << "%" << endl;
 }

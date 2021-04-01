@@ -7,9 +7,13 @@ void wanita ();
 void pria ();
 
 //Penginputan Gender
-void gender () {
+void input_gender () {
 
     string gender;
+
+    cout << "\n";
+    cout << "================ Input Your Gender ================" << endl;
+    
     cout << "Jenis Kelamin (W/P) : ";
     cin >> gender;
         if (gender == "W" || gender == "w") {
@@ -17,6 +21,9 @@ void gender () {
         }
         else if ( gender == "P" || gender == "p") {
             pria();
+        }
+        else {
+            input_gender();
         }
 }
 
@@ -29,11 +36,14 @@ void wanita () {
     //Input Data
     cout << "Masukkan Data : " << endl;
 
-    cout << "Weight : ";
+    cout << "Weight in Kg : ";
         cin >> weight;
     
     cout << "Wrist measurement (at fullest point) : ";
         cin >> wrist;
+
+    cout << "Waist measurement (at navel) : ";
+        cin >> waist;
 
     cout << "Hip measurement (at fullest point) : ";
         cin >> hip;
@@ -41,12 +51,9 @@ void wanita () {
     cout << "Forearm Measurement : ";
         cin >> forearm;
 
-    cout << "Waist measurement (at navel) : ";
-        cin >> waist;
-
     //Penghitungan
     A1  = (weight * 0.732) + 8.987;
-    A2  = wrist / 0.157;
+    A2  = wrist / 3.140;
     A3  = waist * 0.157;
     A4  = hip * 0.249;
     A5  = forearm * 0.434;
@@ -58,22 +65,22 @@ void wanita () {
 
     //Hasil
     cout << "\n";
-    cout << "========== Your Body Information ==========" << endl;
+    cout << "============== Your Body Information ==============" << endl;
 
     //Nilai Body Fat
-    cout << "Your Body Fat is : " << body_fat << endl;
+    cout << "Your Body Fat is\t\t\t: " << body_fat << endl;
 
     //Nilai Body Fat
-    cout << "Your Body Fat Percentage (BEP) is : " << body_fat_percentage << "\n%" << endl;
+    cout << "Your Body Fat Percentage (BEP) is\t: " << body_fat_percentage << " %" << endl;
     
     // Kategori
-    if ( body_fat_percentage <= 32 ) {
-        cout <<  "Your Category is Normal" << endl;
+    cout << "Your Category is\t\t\t: ";
+    if ( body_fat_percentage <= 26 ) {
+        cout <<  "Normal" << endl;
     }
     else {
-        cout << "Your Category is Obesitas" << endl;
+        cout << "Obesitas" << endl;
     }
-
 
 }
 
@@ -103,27 +110,35 @@ void pria () {
 
     //Hasil
     cout << "\n";
-    cout << "========== Your Body Information ==========" << endl;
+    cout << "============== Your Body Information ==============" << endl;
+    
+    //Nilai Body Fat
+    cout << "Your Body Fat is\t\t\t: " << body_fat << endl;
 
     //Nilai Body Fat
-    cout << "Your Body Fat is : " << body_fat << endl;
-
-    //Nilai Body Fat
-    cout << "Your Body Fat Percentage (BEP) is : " << body_fat_percentage << "\n%" << endl;
+    cout << "Your Body Fat Percentage (BEP) is\t: " << body_fat_percentage << " %" << endl;
     
     // Kategori
+    cout << "Your Category is\t\t\t: ";
     if ( body_fat_percentage <= 26 ) {
-        cout <<  "Your Category is Normal" << endl;
+        cout <<  "Normal" << endl;
     }
     else {
-        cout << "Your Category is Obesitas" << endl;
+        cout << "Obesitas" << endl;
     }
 
 
 }
 
+void closing () {
+    cout << endl;
+    cout << "==================== Thank You ====================" << endl;
+
+}
+
 int main () {
-    gender ();
+    input_gender ();
+    closing ();
 
     return 0;
 }
