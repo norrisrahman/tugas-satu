@@ -6,6 +6,14 @@ using namespace std;
 void wanita ();
 void pria ();
 
+void intro () {
+    cout << "\n";
+    cout << "=============================================================" << endl;
+    cout << "\t\t\t BODY FAT CALCULATOR \t\t\t" << endl;
+    cout << "=============================================================" << endl;
+    cout << "\n";
+}
+
 //Penginputan Gender
 void input_gender () {
 
@@ -137,6 +145,7 @@ void closing () {
 }
 
 int main () {
+    intro ();
     input_gender ();
     closing ();
 
