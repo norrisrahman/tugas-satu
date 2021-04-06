@@ -8,9 +8,9 @@ int main () {
 
     //Header / Intro
     cout << "\n";
-    cout << "=============================================================" << endl;
-    cout << "\t\t KALKULATOR AKAR PERSAMAAN KUADRAT \t\t\t " << endl;
-    cout << "=============================================================" << endl;
+    cout << "===================================================================" << endl;
+    cout << "\t\t KALKULATOR AKAR PERSAMAAN KUADRAT" << endl;
+    cout << "===================================================================" << endl;
     cout << "\n";
 
     //User Input Data
@@ -22,7 +22,7 @@ int main () {
         cin >> c;
 
     cout << "\n";
-    cout << "==================== Hasil dan Jenis Akar ===================" << endl;
+    cout << "======================= Hasil dan Jenis Akar ======================" << endl;
     cout << "\n";
 
     //Penghitungan Nilai Determinan
@@ -51,7 +51,7 @@ int main () {
     }
 
     cout << "\n";
-    cout << "========================== Selesai ==========================" << endl;
+    cout << "============================= Selesai =============================" << endl;
     cout << "\n";
     
     return 0;
