@@ -8,9 +8,9 @@ void pria ();
 
 void intro () {
     cout << "\n";
-    cout << "=============================================================" << endl;
-    cout << "\t\t\t BODY FAT CALCULATOR \t\t\t" << endl;
-    cout << "=============================================================" << endl;
+    cout << "===================================================" << endl;
+    cout << "\t\t BODY FAT CALCULATOR \t\t\t" << endl;
+    cout << "===================================================" << endl;
     cout << "\n";
 }
 
@@ -19,10 +19,7 @@ void input_gender () {
 
     string gender;
 
-    cout << "\n";
-    cout << "================ Input Your Gender ================" << endl;
-    
-    cout << "Jenis Kelamin (W/P) : ";
+    cout << "Select Your Gender (W/P) : ";
     cin >> gender;
         if (gender == "W" || gender == "w") {
             wanita();
@@ -38,11 +35,11 @@ void input_gender () {
 void wanita () {
     float weight, wrist, hip,forearm, waist ;
     float A1, A2, A3, A4, A5, B;
-
     float body_fat, body_fat_percentage;
 
     //Input Data
-    cout << "Masukkan Data : " << endl;
+    cout << "\n";
+    cout << "=================== Input Data ===================" << endl;
 
     cout << "Weight in Kg : ";
         cin >> weight;
@@ -95,7 +92,6 @@ void wanita () {
 void pria () {
     float weight, wrist ;
     float A1, A2, B;
-
     float body_fat, body_fat_percentage;
 
     //Input Data
