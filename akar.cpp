@@ -14,11 +14,11 @@ int main () {
     cout << "\n";
 
     //User Input Data
-    cout << "Masukkan Nilai A : ";
+    cout << "Masukkan Nilai a : ";
         cin >> a;
-    cout << "Masukkan Nilai B : ";
+    cout << "Masukkan Nilai b : ";
         cin >> b;
-    cout << "Masukkan Nilai C : ";
+    cout << "Masukkan Nilai c : ";
         cin >> c;
 
     cout << "\n";
