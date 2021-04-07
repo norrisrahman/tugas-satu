@@ -1,4 +1,6 @@
 # include <iostream>
+#include <cstdlib>
+#include <limits>
 
 using namespace std;
 
@@ -105,10 +107,10 @@ void pria () {
     cout << "\n";
     cout << "=================== Masukkan Data ===================" << endl;
 
-    cout << "Weight : ";
+    cout << "Berat badan (Kg)\t\t\t: ";
         cin >> weight;
     
-    cout << "Wrist : ";
+    cout << "Ukuran Wrist/Pergelangan Tangan (cm)\t: ";
         cin >> wrist;
 
     //Penghitungan
@@ -144,14 +146,14 @@ void pria () {
 
 void closing () {
     cout << endl;
-    cout << "===================== Thank You =====================" << endl;
+    cout << "==================== Terima Kasih ===================" << endl;
 
 }
+
 
 int main () {
     intro ();
     input_gender ();
     closing ();
-
     return 0;
 }

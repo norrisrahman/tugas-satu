@@ -1,6 +1,18 @@
 #include <iostream>
 #include <cmath>
+#include <cstdlib>
+#include <stdlib.h>
+#include <limits>
 using namespace std;
+
+//Kode Untuk reload
+void reload () {
+    cout << "Tekan Enter Untuk Mengulangi...";
+    cin.get();
+    std::cin.sync(); std::cin.get();
+    if (system("CLS")) system("clear");
+
+}
 
 int main () {
     float a, b, c, D;
@@ -53,6 +65,12 @@ int main () {
     cout << "\n";
     cout << "============================= Selesai =============================" << endl;
     cout << "\n";
+
+    //Reload
+    reload ();
+
+    //Kembali Ke Line Awal
+    main ();
     
     return 0;
 
