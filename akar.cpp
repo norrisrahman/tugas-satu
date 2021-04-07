@@ -4,7 +4,7 @@ using namespace std;
 
 int main () {
     float a, b, c, D;
-    float x1, x2, real, imajiner;
+    float x1, x2;
 
     //Header / Intro
     cout << "\n";

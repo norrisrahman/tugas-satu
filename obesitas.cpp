@@ -8,18 +8,19 @@ void pria ();
 
 void intro () {
     cout << "\n";
-    cout << "===================================================" << endl;
+    cout << "=====================================================" << endl;
     cout << "\t\t BODY FAT CALCULATOR \t\t\t" << endl;
-    cout << "===================================================" << endl;
+    cout << "=====================================================" << endl;
     cout << "\n";
 }
 
 //Penginputan Gender
+
 void input_gender () {
 
     string gender;
 
-    cout << "Select Your Gender (W/P) : ";
+    cout << "Pilih Jenis Kelamin (W/P) : ";
     cin >> gender;
         if (gender == "W" || gender == "w") {
             wanita();
@@ -28,9 +29,13 @@ void input_gender () {
             pria();
         }
         else {
+            cout << "Data yang kamu masukkan tidak valid" << endl;
             input_gender();
         }
 }
+
+//KODE UNTUK PENGHITUNGAN BODY FAT WANITA
+
 
 void wanita () {
     float weight, wrist, hip,forearm, waist ;
@@ -39,21 +44,21 @@ void wanita () {
 
     //Input Data
     cout << "\n";
-    cout << "=================== Input Data ===================" << endl;
+    cout << "=================== Masukkan Data ===================" << endl;
 
-    cout << "Weight in Kg : ";
+    cout << "Berat badan (Kg)\t\t\t: ";
         cin >> weight;
     
-    cout << "Wrist measurement (at fullest point) : ";
+    cout << "Ukuran Wrist/Pergelangan Tangan (cm)\t: ";
         cin >> wrist;
 
-    cout << "Waist measurement (at navel) : ";
+    cout << "Ukuran Waist/Pinggang (cm)\t\t: ";
         cin >> waist;
 
-    cout << "Hip measurement (at fullest point) : ";
+    cout << "Ukuran Hip/Panggul (cm)\t\t\t: ";
         cin >> hip;
     
-    cout << "Forearm Measurement : ";
+    cout << "Ukuran Forearm/Lengan Bawah (cm)\t: ";
         cin >> forearm;
 
     //Penghitungan
@@ -70,24 +75,26 @@ void wanita () {
 
     //Hasil
     cout << "\n";
-    cout << "============== Your Body Information ==============" << endl;
+    cout << "================ Informasi Badan Kamu ===============" << endl;
 
     //Nilai Body Fat
-    cout << "Your Body Fat is\t\t\t: " << body_fat << endl;
+    cout << "Berat badan\t\t\t\t: " << body_fat << " Kg" << endl;
 
     //Nilai Body Fat
-    cout << "Your Body Fat Percentage (BEP) is\t: " << body_fat_percentage << " %" << endl;
+    cout << "Persentase Lemak Tubuh (BEP)\t\t: " << body_fat_percentage << " %" << endl;
     
     // Kategori
-    cout << "Your Category is\t\t\t: ";
-    if ( body_fat_percentage <= 26 ) {
-        cout <<  "Normal" << endl;
-    }
-    else {
-        cout << "Obesitas" << endl;
-    }
+    cout << "Kamu termasuk\t\t\t\t: ";
+        if ( body_fat_percentage <= 26 ) {
+            cout <<  "Normal" << endl;
+        }
+        else {
+            cout << "Obesitas" << endl;
+        }
 
 }
+
+//KODE UNTUK PENGHITUNGAN BODY FAT PRIA
 
 void pria () {
     float weight, wrist ;
@@ -95,7 +102,8 @@ void pria () {
     float body_fat, body_fat_percentage;
 
     //Input Data
-    cout << "Masukkan Data : " << endl;
+    cout << "\n";
+    cout << "=================== Masukkan Data ===================" << endl;
 
     cout << "Weight : ";
         cin >> weight;
@@ -114,29 +122,29 @@ void pria () {
 
     //Hasil
     cout << "\n";
-    cout << "============== Your Body Information ==============" << endl;
+    cout << "================ Informasi Badan Kamu ===============" << endl;
     
     //Nilai Body Fat
-    cout << "Your Body Fat is\t\t\t: " << body_fat << endl;
+    cout << "Berat badan\t\t\t\t: " << body_fat << " Kg" <<endl;
 
     //Nilai Body Fat
-    cout << "Your Body Fat Percentage (BEP) is\t: " << body_fat_percentage << " %" << endl;
+    cout << "Persentase Lemak Tubuh (BEP)\t\t: " << body_fat_percentage << " %" << endl;
     
     // Kategori
-    cout << "Your Category is\t\t\t: ";
-    if ( body_fat_percentage <= 26 ) {
-        cout <<  "Normal" << endl;
-    }
-    else {
-        cout << "Obesitas" << endl;
-    }
+    cout << "Kamu termasuk\t\t\t\t: ";
+        if ( body_fat_percentage <= 26 ) {
+            cout <<  "Normal" << endl;
+        }
+        else {
+            cout << "Obesitas" << endl;
+        }
 
 
 }
 
 void closing () {
     cout << endl;
-    cout << "==================== Thank You ====================" << endl;
+    cout << "===================== Thank You =====================" << endl;
 
 }
 
